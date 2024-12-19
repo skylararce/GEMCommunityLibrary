@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<!-- 	All images were created by a GEM volunteer -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Girasoles En Marcha - Library</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="GEM_Logo-02.jpg" type="image/x-icon" />
+</head>
+
+<body>
+<!-- 	This is code for the nav bar -->
+  <header>
+    <div class="nav-container">
+      <div>
+        <img class="nav-logo" src="GEM_Logo-05.png">
+        <div class="navtoggle" id="navToggle">
+          <img id="shortened-nav" class="navIcon" src="https://static.thenounproject.com/png/659803-200.png"
+            width="20px">
+          <img class="navIcon hidden"
+            src="https://icons-for-free.com/iconfiles/png/512/close+cross+delete+exit+remove+icon-1320085939816384527.png"
+            width="20px">
+        </div>
+      </div>
+      <nav>
+        <ul>
+          	<li><a href="GEM-gallery.html">Gallery</a></li>
+	          <li><a href="library.html">Library</a></li>
+						<li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+	<!-- 	This is code for a title/header -->
+	<section class="purple-section">
+		<br>
+		<center>
+			<p class="text">COMING SOON</p>
+		</center>
+		<br>
+	</section>
+
+	<!-- 		This is code for the community library image -->
+  <section id="libraryImage" class="section-img">
+    <img class="main-img" src="GEM_home_banner.png">
+  </section>
+
+	
+<!-- 		This is code for a quote -->
+  <section class="quote" style="background: #97A891;">
+    <p>“Young people especially need to read texts that affirm what they feel is valid, and that also pushes them towards an understanding of how others live and think.”<br>
+      - Elizabeth Acevedo</p>
+	</section>
+
+	<!-- 		This is code for GEM's social justice lit highlights -->
+	<section class="yellow-section">
+		<h1 class="title">Social Justice Lit Highlights</h1>
+		<center>
+			<img class="picture-sizing3" src="image_6487327.JPG">
+			<img class="picture-sizing3" src="image_6487327 (1).JPG">
+			<img class="picture-sizing3" src="image_50802177.JPG">
+		</center>
+	</section>
+
+	
+	
+<!-- 	Code for books and filtering books -->
+
+<!--   <center>
+    <div id="genreContainer">
+      <button class="genrebtn active" onclick="filterSelection('all')">Show All</button>
+      <button class="genrebtn" onclick="filterSelection('fantasy')">Fantasy</button>
+      <button class="genrebtn" onclick="filterSelection('adventure')">Adventure</button>
+      <button class="genrebtn" onclick="filterSelection('sci-fi')">Science Fiction</button>
+      <button class="genrebtn" onclick="filterSelection('reference')">Reference Only</button>
+    </div>
+  </center>
+
+  <div class="bookContainer">
+    <center>
+      <div class="filterBook all fantasy adventure hidden">
+        <div class="titleContainer">
+          <h2 class="title2">Harry Potter and the Sorcerer's Stone</h2>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51v1aAlA9xL._SX318_BO1,204,203,200_.jpg"
+            width="120px">
+          <p>By J.K. Rowling</p>
+        </div>
+        <div class="contentContainer">
+
+          <p class="text2">In porttitor justo tempus velit condimentum vulputate. Sed eget augue ut lacus eleifend tincidunt. Vivamus
+            at ultricies metus, sed convallis sem. In vitae maximus quam. Quisque at placerat libero. Suspendisse
+            egestas ex arcu, in dapibus elit cursus id. Aenean eleifend felis sed magna mollis, at consequat nulla
+            congue. Donec sed dignissim nisl. Quisque auctor cursus nibh, eget scelerisque enim varius quis. Maecenas in
+            porta justo. Nam nec nulla felis.</p>
+          <p class="text2">For grades 3-4</p>
+          <p class="text2">Status: Available</p>
+          <button id="reserveButton" class="bookButton">Reserve</button>
+          <form id="form1" class="bookForms" style="display: none;"
+            action="https://formsubmit.co/3121bc3916658c6d723f7c5d43c2d7bf" method="POST">
+            <input type="hidden" name="_cc" value="skylar.arce@yahoo.com">
+            <input type="hidden" name="_subject" value="New book has been requested"><br>
+            <input type="hidden" name="_autoresponse" value="Thank you! You're form has been received.">
+            <input type="text" name="bookTitle" placeholder="Book Title" required><br><br>
+            <input type="text" name="firstName" placeholder="First Name" required><br><br>
+            <input type="text" name="lastName" placeholder="Last Name" required><br><br>
+            <input type="email" name="email" placeholder="Email Address" required><br><br>
+            <input type="text" name="childrenNames" placeholder="Name of Child/Children" required><br><br>
+            <input type="text" name="driversLicense" placeholder="Drivers License" required><br><br>
+            <input type="checkbox" required><br><br>
+            <label>I acknowledge...</label><br><br>
+            <input type="hidden" name="_next" value="gemcommunitylibrary.com/library.html">
+            <button class="bookButton" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </center>
+
+    <center>
+      <div class="filterBook all fantasy">The Cat in a the Hat</div>
+    </center>
+    <center>
+      <div class="filterBook all fantasy adventure">Percy Jackson</div>
+    </center>
+    <center>
+      <div class="filterBook all sci-fi">A Wrinkle in Time</div>
+    </center>
+    <center>
+      <div class="filterBook all sci-fi adventure">Maya and the Rising Dark</div>
+    </center>
+    <center>
+      <div class="filterBook all reference">The House on Mango Street</div>
+    </center>
+    <center>
+      <div class="filterBook all fantasy">Dragons Love Tacos</div>
+    </center>
+    <center>
+      <div class="filterBook all sci-fi">Cats vs. Robots</div>
+    </center>
+    <center>
+      <div class="filterBook all reference">Hatchet</div>
+    </center>
+    <center>
+      <div class="filterBook all reference">The Alchemist</div>
+    </center>
+    <center>
+      <div class="filterBook all fantasy">The Cat in a the Hat</div>
+    </center>
+    <center>
+      <div class="filterBook all fantasy adventure">Percy Jackson</div>
+    </center>
+    <center>
+      <div class="filterBook all sci-fi">A Wrinkle in Time</div>
+    </center>
+    <center>
+      <div class="filterBook all sci-fi adventure">Maya and the Rising Dark</div>
+    </center>
+    <center>
+      <div class="filterBook all reference">The House on Mango Street</div>
+    </center>
+    <center>
+      <div class="filterBook all fantasy">Dragons Love Tacos</div>
+    </center>
+    <center>
+      <div class="filterBook all sci-fi">Cats vs. Robots</div>
+    </center>
+    <center>
+      <div class="filterBook all reference">Hatchet</div>
+    </center>
+    <center>
+      <div class="filterBook all reference">The Alchemist</div>
+    </center><br>
+  </div> -->
+
+
+	<!-- 	This is code for the footer -->
+  <center class="footerBackground">
+    <footer>Copyright © 2022 GEM Community Library - All Rights Reserved. <br><br>
+      Created by Skylar Arce</footer><br>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

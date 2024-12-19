@@ -1,0 +1,469 @@
+/* Code for font styles from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body {
+  margin: 0;
+  padding-top: 97px;
+}
+
+/* Code for text on the website */
+.title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 27px;
+}
+
+.text {
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+}
+
+.subtitle {
+	font-family: 'Abril Fatface', cursive;
+  font-size: 23px;
+}
+
+.title2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+.text2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+}
+
+.float-text {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 20px;
+	font-size: 24px;
+	font-family: 'Cairo', sans-serif;
+}
+
+.bible-verse {
+	font-family: 'Poiret One', cursive;
+	font-style: italic;
+	font-size: 14px;
+}
+
+/* Code for images on website */
+.picture-sizing {
+	width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4%;
+	margin: 30px;
+}
+
+.picture-sizing2 {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4%;
+}
+
+.picture-sizing3 {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 4%;
+	margin: 10px;
+}
+
+.girasoles-in-action {
+	display: block;
+	height: 320px;
+	width: 320px;
+  object-fit: cover;
+  border-radius: 4%;
+	margin: auto;
+}
+
+
+/* Code for styling gallery page */
+.gallery-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+/* 	align-items: center; */
+	align-content: center;
+}
+
+
+
+.gallery-div {
+	position: relative;
+	width: 370px;
+  height: 370px;
+	border-radius: 4%;
+	margin: 25px;
+}
+
+.gallery-photo {
+	position: relative;
+	width: 370px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 4%;
+	z-index: -1;
+}
+
+.caption-box {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+	text-align: center;
+  align-items: center;
+  justify-content: center;
+	margin: 15px;
+	font-family: 'Cairo', sans-serif;
+	z-index: -1;
+}
+
+.gallery-div:hover .caption-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Code for styling links */
+.link-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Code for styling home image */
+.main-img {
+  width: 100%;
+}
+
+/* Code for styling nav bar */
+header {
+  margin: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: #d66c53;
+}
+
+.nav-logo {
+  width: 95px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.open {
+  height: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navtoggle {
+  background: #d66c53;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 1px;
+}
+
+li {
+  float: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #d66c53;
+  overflow: hidden;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+
+/* Code for website to be mobile-friendly */
+@media all and (max-width: 845px) {
+  nav {
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-container {
+    align-items: center;
+    display: block;
+  }
+
+  li {
+    display: block;
+    text-align: center;
+  }
+
+  li a {
+    font-size: 22px;
+    text-decoration: underline dotted white;
+  }
+
+  .navtoggle {
+    display: block;
+    padding: 2px;
+  }
+
+  body {
+    padding-top: 90px;
+  }
+
+  #nav-logo {
+  width: 70px;
+  } 
+
+  .filterBook {
+    height: 100%; 
+  }
+
+  .quote {
+    font-size: 22px !important;
+		padding: 10px !important;
+  }
+  
+  .main-img {
+    width: 100%;
+  }
+  
+  .contentContainer {
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .bookContainer {
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+  .icon-images {
+    width: 70%;
+  }
+
+
+	.picture-sizing {
+		margin: 0;
+	}
+	
+	.picture-sizing2 {
+		max-width: 100%;
+ 		max-height: 100%;
+		width: 100%;
+  	height: 300px;
+  	object-fit: contain;
+  	border-radius: 4%;
+	}
+  
+}
+
+
+/*sections on home page*/
+.purple-section {
+  background: #9B7490;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.quote {
+  font-size: 40px;
+  font-family: 'Tiro Devanagari Hindi', serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.section-img {
+  padding-bottom: 10px;
+}
+
+.green-section {
+  background: #a5bf9c;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.brown-section {
+  background: #95524b;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.yellow-section {
+  background: #fab977;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.plain-section {
+	padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.white-text{
+	color: white;
+}
+
+
+/* Code for styling library */
+.bookContainer {
+  overflow: hidden;
+}
+
+.filterBook {
+  float: center;
+  background-color: #fdefe6;
+  display: none;
+  width: 80%;
+  height: 25%;
+  margin: 3px;
+  padding: 2px; 
+}
+
+.show {
+  display: block;
+}
+
+.bookButton {
+  border: none;
+  cursor: pointer;
+  background-color: #9b7490;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 3px;
+}
+
+.bookButton:hover {
+  background-color: #9b7490be;
+}
+
+.link-button {
+  border: none;
+  cursor: pointer;
+  background-color: #9b7490;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+	text-decoration: none;
+}
+
+.link-button:hover {
+  background-color: #9b7490be;
+}
+
+
+.genrebtn {
+  border: none;
+  cursor: pointer;
+  background-color: #9b7490;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+}
+
+.genrebtn:hover {
+  background-color: #9b7490be;
+}
+
+.genrebtn.active {
+  background-color: #c59bb9e7;
+  color: white;
+}
+
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentContainer {
+ 
+  margin: 5px;
+  width: 50%;
+  
+}
+
+.titleContainer {
+  float: left;
+  width: 50%;
+}
+
+/* Code for styling footer */
+footer {
+  background: #d66c53;
+  padding-top: 20px;
+}
+
+.footerBackground {
+  background: #d66c53;
+}
+
+/* Code for styling GEM image */
+.gem-page-img {
+  display: flex;
+  margin-top: 0;
+}
